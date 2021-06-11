@@ -15,9 +15,10 @@ public class JavaSDETStudent {
 	private String name = "unnamed";
     private String lastname = "unnamed";
     private String phoneNumber = "0123456789";
-    private int SSN = 123456789;
-    private double GPA = 0.0;
     private String email = "a@b.com";
+    private String ssn = "12121";
+    private String gpa = "0.0";
+    
 //    Scanner scanner = new Scanner(System.in);
 //
 //	JavaSDETStudent(){
@@ -32,14 +33,14 @@ public class JavaSDETStudent {
 //	};
 	
     JavaSDETStudent(){}
-	JavaSDETStudent(String name, String lastname, String phoneNum,int SSN, double GPA, String studentID,  String email){
+	JavaSDETStudent(String name, String lastname, String phoneNum,String ssn, String GPA, String studentID,  String email){
 		this.name = name;
 		this.lastname = lastname;
 		this.phoneNumber = phoneNum;
-		this.SSN = SSN;
-		this.GPA = GPA;
-		this.studentID = studentID;
+		this.ssn = ssn;
 		this.email=email;
+		this.studentID = studentID;
+		this.gpa = GPA;
 	}
 
 //	 //Setters
@@ -107,12 +108,12 @@ public class JavaSDETStudent {
         return phoneNumber;
     }
 
-    public int getSSN() {
-        return SSN;
+    public String getSSN() {
+        return ssn;
     }
 
-    public double getGPA() {
-        return GPA;
+    public String getGPA() {
+        return gpa;
     }
 
     public String getStudentID() {

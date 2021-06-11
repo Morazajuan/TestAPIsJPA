@@ -31,8 +31,8 @@ public class Controller {
 	}
 	//get student by id
 	@RequestMapping("/students/{index}")
-	public Optional<JavaSDETStudent> getStudent(@PathVariable String index) {
- 		return studentService.getStudent(index);
+	public Optional<JavaSDETStudent> getStudent(@PathVariable String id) {
+ 		return studentService.getStudent(id);
 	}
 	
 
